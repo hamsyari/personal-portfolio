@@ -1,0 +1,29 @@
+.main {
+    height: 100%;
+    background-color: $base-panel-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: $base-color;
+    text-align: center;
+    font-size: 70px;
+}
+
+.role {
+    color: #222;
+    font-size: 21px;
+    font-weight: 300;
+    font-family: oxygen,Helvetica,sans-serif;
+    margin: 0 0 5px;
+    text-align: center;
+}
+
+@media (min-width: 641px) {
+    .main {
+        margin-left: 10rem;
+    }
+}

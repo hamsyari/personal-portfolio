@@ -1,0 +1,50 @@
+.contentHeaderWrapper {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contentHeaderTitle {
+    display: inline-block;
+
+    &::after {
+        content: '';
+        width: 2px;
+        height: 100%;
+        left: -10px;
+        bottom: 0;
+        display: block;
+        position: absolute;
+        background-color: $base-color;
+    }
+}
+
+.pageHeaderWrapper {
+    &.row {
+    margin-bottom: 40px;
+    padding: 0;
+    text-align: right;
+    justify-content: center;
+}}
+
+.pageHeaderTitle {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.1em;
+}
+
+.pageHeaderDescription {
+    margin: 0;
+    padding: 1px 10px;
+    display: inline-block;
+    background-color: $base-color;
+    color: $base-font-color;
+    font-weight: 100;
+}
+
+@media (min-width: 641px) {
+    .pageHeaderTitle {
+        margin: 0;
+        font-size: 60px;
+        line-height: 1.1em;
+    }
+}

@@ -1,0 +1,132 @@
+.main {
+    width: 100%;
+    flex: 1;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.contentTimeline {
+    margin-bottom: 20px;
+    border-left: 1px solid #F5F5F5;
+    position: relative;
+}
+
+.timelineItemWrapper {
+    position: relative;
+    font-size: 16px;
+    padding: 0 0 20px 20px;
+}
+
+.timelineItemDate {
+    display: inline-block;
+    position: relative;
+    font-weight: 200;
+    margin-left: -20px;
+    margin-bottom: 0;
+    padding: 2px 5px 2px 20px;
+    color: $base-font-color;
+    background-color: $base-color;
+}
+
+.timelineItemTitle {
+    margin: 10px 0 0 0;
+    font-weight: 800;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+.timelineItemSubtitle {
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.45em;
+
+    &::after {
+        content: '|';
+        position: relative;
+        left: 5px;
+    }
+
+    ~ .timelineItemSubtitle {
+        margin-left: 10px;
+
+        &::after {
+            content: '';
+        }
+    }
+}
+
+.timelineItemDescriptionWrapper {
+    margin-top: 10px;
+    margin-left: 1.45rem;
+    padding-left: 0;
+}
+
+.timelineItemDescription {
+    margin-bottom: calc(1.45rem / 2);
+}
+
+.skillsWrapper {
+    margin-bottom: 15px;
+}
+
+.skillTitle {
+    margin-bottom: 2px;
+}
+
+.skillItem {
+    padding: 2px 5px;
+    margin: 2px;
+    display: inline-block;
+    background-color: $base-color;
+    color: $base-font-color;
+    border-radius: 5px;
+}
+
+.linkItemWrapper {
+    display: inline-block;
+    font-size: 1.8em;
+    color: #222;
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+        color: $base-color;
+    }
+}
+
+.downloadButtonWrapper {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.downloadButton {
+    display: inline-block;
+    position: relative;
+    padding: .8em 2em;
+    margin-bottom: .25em;
+    font-size: 1em;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    border: 2px solid $base-color;
+    color: #222;
+    text-shadow: none;
+    background: 0 0;
+    border-radius: 0;
+}
+    
+.downloadButton:hover {
+    color: $base-font-color;
+    background-color: $base-color;
+    cursor: pointer;
+}
+
+@media (min-width:641px) {
+    .downloadButtonWrapper {
+        margin: 0;
+        text-align: left;
+    }
+}

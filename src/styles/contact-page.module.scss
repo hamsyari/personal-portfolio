@@ -1,0 +1,39 @@
+.main {
+    width: 100%;
+    flex: 1;
+}
+
+.contactItemGrid {
+    flex: 1;
+}
+
+.contactLinkItemWrapper {
+    margin-top: 1.1em;
+    padding: 30px;
+    text-align: center;
+    background-color: #F9F9F9;
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    width: 100%;
+    color: #000;
+    &:hover {
+        background-color: $base-color;
+        color: $base-font-color;
+        cursor: pointer;
+
+        .iconWrapper {
+            color: $base-font-color;
+        }
+    }
+}
+
+.contactItem {
+    margin-top: 0.6em;
+    font-weight: 600;
+}
+
+.iconWrapper {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: $base-color
+}
