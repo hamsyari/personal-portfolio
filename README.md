@@ -1,6 +1,6 @@
 <h1>
   <a href="https://www.hamsyari.net">
-    <img alt="Hamsyari" src="./src/images/icon.png" width="25" />
+    <img alt="Hamsyari" src="./src/images/icon.png" width="30" />
   </a>
   Personal Portfolio
 </h1>
