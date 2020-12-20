@@ -9,7 +9,7 @@ import '../styles/layout.scss'
 
 const ResumePage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Resume" description="An overview of my professional experience, education and skills."/>
     <MainView page="Resume"/>
   </Layout>
 )

@@ -9,7 +9,7 @@ import '../styles/layout.scss'
 
 const AboutMePage = () => (
   <Layout>
-    <SEO title="About Me"/>
+    <SEO title="About Me" description="A short summary of my background as a software engineer and also my life goals."/>
     <MainView page="AboutMe"/>
   </Layout>
 )
