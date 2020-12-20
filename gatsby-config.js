@@ -118,6 +118,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-8TKKJFQ4BJ",
+        head: true,
+        anonymize: true
+      },
+    },
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         data: `@import "${__dirname}/src/styles/global";`,

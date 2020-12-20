@@ -3,6 +3,7 @@ import { ContentHeader } from '../common/content-header'
 import { ResumeTimelineItem } from './resume-timeline-item'
 import ResumePageStyles from '../../styles/resume-page.module.scss'
 import { ResumeSkillItem } from './resume-skill-item'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export const ResumeSection = (props) => {
     const contentBody = props.type === "Skills" ?
@@ -25,18 +26,18 @@ export const ResumeSection = (props) => {
                         <i className="icon envelope"></i>
                     </div>
                 </a>
-                <a className={ResumePageStyles.linkItemWrapper}
+                <OutboundLink className={ResumePageStyles.linkItemWrapper}
                     href={`${props.content.linkedin}`} target="_blank" rel="noopener noreferrer">
                     <div className={ResumePageStyles.iconWrapper}>
                         <i className="icon linkedin"></i>
                     </div>
-                </a>
-                <a className={ResumePageStyles.linkItemWrapper}
+                </OutboundLink>
+                <OutboundLink className={ResumePageStyles.linkItemWrapper}
                     href={`${props.content.github}`} target="_blank" rel="noopener noreferrer">
                     <div className={ResumePageStyles.iconWrapper}>
                         <i className="icon github"></i>
                     </div>
-                </a>
+                </OutboundLink>
             </div> 
         ) :
         (

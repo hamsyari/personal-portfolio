@@ -4,6 +4,7 @@ import { PageHeader } from '../common/page-header'
 import { ResumeSection } from './resume-section'
 
 import { useStaticQuery, graphql } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const ResumePage = () => {
     const data = useStaticQuery(graphql`
@@ -50,8 +51,8 @@ const ResumePage = () => {
                     <ResumeSection type="Skills" content={data.site.siteMetadata.skills}/>
                     <ResumeSection type="Links" content={data.site.siteMetadata.links}/>
                     <div className={ResumePageStyles.downloadButtonWrapper}>
-                        <a href={data.site.siteMetadata.links.resume} target="_blank" rel="noopener noreferrer"
-                        className={ResumePageStyles.downloadButton}>Download Resume</a>
+                        <OutboundLink href={data.site.siteMetadata.links.resume} target="_blank" rel="noopener noreferrer"
+                        className={ResumePageStyles.downloadButton}>Download Resume</OutboundLink>
                     </div>
                 </div>
             </div>
