@@ -40,7 +40,7 @@ const ResumePage = () => {
 
     return (
         <div className={`${ResumePageStyles.main} ui grid`}>
-            <PageHeader title="Resume" description="2 Years Experience"/>
+            <PageHeader title="Resume" description="Overview"/>
             <div className="row">
                 <div className="sixteen wide mobile ten wide computer column">
                     <ResumeSection type="Experience" content={data.site.siteMetadata.experience}/>
