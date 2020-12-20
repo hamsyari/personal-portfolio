@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.hamsyari.net`,
     title: `Hamsyari`,
-    description: `Portfolio / Resume`,
+    description: `Hi, I'm Hamsyari. Here's my portfolio.`,
     author: `Hamsyari`,
     role: `Software Engineer`,
     links: {
@@ -94,6 +95,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -101,8 +105,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -113,6 +115,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-8TKKJFQ4BJ",
+        head: true,
+        anonymize: true
       },
     },
     {

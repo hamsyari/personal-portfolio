@@ -9,7 +9,7 @@ import '../styles/layout.scss'
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact"/>
+    <SEO title="Contact" description="Want to get in touch? I'd love to hear from you. Here's how you can contact me."/>
     <MainView page="Contact"/>
   </Layout>
 )

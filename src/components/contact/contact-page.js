@@ -4,6 +4,7 @@ import ContactPageStyles from '../../styles/contact-page.module.scss'
 import { ContentHeader } from '../common/content-header'
 
 import { useStaticQuery, graphql } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const ContactPage = () => {
     const data = useStaticQuery(graphql`
@@ -40,13 +41,13 @@ const ContactPage = () => {
                             </a>
                         </div>
                         <div className={`${ContactPageStyles.contactItemGrid} six wide column`}>
-                            <a className={ContactPageStyles.contactLinkItemWrapper}
+                            <OutboundLink className={ContactPageStyles.contactLinkItemWrapper}
                               href={`${data.site.siteMetadata.links.linkedin}`} target="_blank" rel="noopener noreferrer">
                                 <div className={ContactPageStyles.iconWrapper}>
                                     <i className="icon linkedin"></i>
                                 </div>
                                 <h3 className={ContactPageStyles.contactItem}>LinkedIn</h3>
-                            </a>
+                            </OutboundLink>
                         </div>
                         <div className="two wide column computer only"></div>
                     </div>
