@@ -5,4 +5,4 @@
   Personal Portfolio
 </h1>
 
-A personal site used for compiling my portfolio. You may visit it at [hamsyari.net](https://www.hamsyari.net).
+A personal site used for compiling my portfolio. You may visit it at [hamsyari.com](https://www.hamsyari.com).
